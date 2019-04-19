@@ -1,0 +1,42 @@
+<div class="main">
+  <h4>Edit this pet</h4>
+  <form class="edit" (submit)="editOnePet()">
+    <div class="row">
+        <span class="err" *ngFor="let msg of errMsgs">{{ msg }}</span>
+    </div>
+    <div class="row">
+        <label>Pet name:</label>
+    </div>
+    <div class="lbl">
+        <input type="text" name="editPet.name" [(ngModel)]="editPet.name">
+    </div>
+    <div class="row">
+        <label>Pet type:</label>
+    </div>
+    <div class="lbl">
+        <input type="text" name="editPet.type" [(ngModel)]="editPet.type">
+    </div>
+    <div class="row">
+        <label>Description:</label>
+    </div>
+    <div class="lbl">
+        <input type="text" name="editPet.desc" [(ngModel)]="editPet.desc">
+    </div>
+    <div class="row">
+        <label>Skills (optional):</label>
+    </div>
+    <div class="row">
+        Skill 1: <input type="text" name="editPet.skill1" [(ngModel)]="editPet.skill1">
+    </div>
+    <div class="row">
+        Skill 2: <input type="text" name="editPet.skill2" [(ngModel)]="editPet.skill2">
+    </div>
+    <div class="row">
+        Skill 3: <input type="text" name="editPet.skill3" [(ngModel)]="editPet.skill3">
+    </div>
+    <div class="row">
+      <input type="submit" value="Edit Pet">
+    </div>
+  </form>
+  <button class="cancel" (click)="showOnePet()">Cancel</button>
+</div>

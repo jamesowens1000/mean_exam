@@ -1,0 +1,33 @@
+.main{
+    width: 650px;
+    padding: 25px;
+    margin-left: 35%;
+}
+h4{
+    margin-right: 200px;
+}
+.ilb{
+    display: inline-block;
+    vertical-align: top;
+}
+.skl{
+    margin-left: 25px;
+}
+.row{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+span{
+    font-weight: bold;
+    margin-right: 15px;
+}
+.btn{
+    border-radius: 3px;
+    border: none;
+    background-image: linear-gradient(gray, cadetblue);
+    color: white;
+    margin-top: 25px;
+}
+.like{
+    margin-right: 15px;
+}

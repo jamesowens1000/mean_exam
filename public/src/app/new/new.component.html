@@ -1,0 +1,42 @@
+<div class="main">
+  <h4>Know of a pet needing a home?</h4>
+  <form class="new" (submit)="createNewPet()">
+    <div class="row">
+        <span class="err" *ngFor="let msg of errMsgs">{{ msg }}</span>
+    </div>
+    <div class="row">
+        <label>Pet name:</label>
+    </div>
+    <div class="lbl">
+        <input type="text" name="newPet.name" [(ngModel)]="newPet.name">
+    </div>
+    <div class="row">
+        <label>Pet type:</label>
+    </div>
+    <div class="lbl">
+        <input type="text" name="newPet.type" [(ngModel)]="newPet.type">
+    </div>
+    <div class="row">
+        <label>Description:</label>
+    </div>
+    <div class="lbl">
+        <input type="text" name="newPet.desc" [(ngModel)]="newPet.desc">
+    </div>
+    <div class="row">
+        <label>Skills (optional):</label>
+    </div>
+    <div class="row">
+        Skill 1: <input type="text" name="newPet.skill1" [(ngModel)]="newPet.skill1">
+    </div>
+    <div class="row">
+        Skill 2: <input type="text" name="newPet.skill2" [(ngModel)]="newPet.skill2">
+    </div>
+    <div class="row">
+        Skill 3: <input type="text" name="newPet.skill3" [(ngModel)]="newPet.skill3">
+    </div>
+    <div class="row">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+  <a href="" [routerLink]="['/pets']" class="cancel"><button>Cancel</button></a>
+</div>

@@ -1,0 +1,22 @@
+<div class="main">
+  <div class="head">
+    <h4 class="ilb">Details about {{ showPet["name"] }}</h4><a class="ilb" [routerLink]="['/pets']">Home</a>
+  </div>
+  <div class="row">
+    <span>Pet Type:</span><label>{{ showPet["type"] }}</label>
+  </div>
+  <div class="row">
+    <span>Description:</span><label>{{ showPet["desc"] }}</label>
+  </div>
+  <div class="row">
+    <span>Skills:</span>
+  </div>
+  <div class="row" *ngFor="let skl of skills">
+    <label class="skl">{{ skl }}</label><br>
+  </div>
+  <div class="row">
+    <span>Likes:</span><label>{{ showPet["likes"] }}</label>
+  </div>
+  <button id="likeBtn" class="btn like" (click)="likeAPet()" *ngIf="showLike">Like this pet</button>
+  <button class="btn" (click)="adoptPet()">Adopt this pet!</button>
+</div>

@@ -1,0 +1,15 @@
+.main{
+    width: 500px;
+    padding: 25px;
+    margin-left: 35%;
+}
+.btn{
+    border-radius: 3px;
+    border: none;
+    background-image: linear-gradient(white, coral);
+    color: white;
+}
+.btnShow{
+    margin-right: 15px;
+    background-image: linear-gradient(white, cadetblue);
+}
